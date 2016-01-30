@@ -9,29 +9,41 @@ const environment = {
   }
 }[process.env.NODE_ENV || 'development'];
 
+const strings = {
+  title: 'fiTTrail',
+  description: 'Keep track of your fitness programme.',
+  summary: 'fiTTrail gives you and your doctor a way to keep track of your fitness.',
+  image: {
+    url: '',
+    width: '200',
+    height: '200' },
+  locale: 'en_US',
+  creator: 'github.com/fiTTrail'
+}
+
 module.exports = Object.assign({
   host: process.env.HOST || 'localhost',
   port: process.env.PORT,
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'React Redux Example',
-    description: 'All the modern best practices in one example.',
+    title: strings.title,
+    description: strings.description,
     head: {
-      titleTemplate: 'React Redux Example: %s',
+      titleTemplate: `${strings.title}: %s`,
       meta: [
-        {name: 'description', content: 'All the modern best practices in one example.'},
+        {name: 'description', content: strings.description},
         {charset: 'utf-8'},
-        {property: 'og:site_name', content: 'React Redux Example'},
-        {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
-        {property: 'og:locale', content: 'en_US'},
-        {property: 'og:title', content: 'React Redux Example'},
-        {property: 'og:description', content: 'All the modern best practices in one example.'},
-        {property: 'og:card', content: 'summary'},
-        {property: 'og:site', content: '@erikras'},
-        {property: 'og:creator', content: '@erikras'},
-        {property: 'og:image:width', content: '200'},
-        {property: 'og:image:height', content: '200'}
+        {property: 'og:site_name', content: strings.title},
+        {property: 'og:image', content: strings.image.url},
+        {property: 'og:locale', content: strings.locale},
+        {property: 'og:title', content: strings.title},
+        {property: 'og:description', content: strings.description},
+        {property: 'og:card', content: strings.summary},
+        {property: 'og:site', content: strings.creator},
+        {property: 'og:creator', content: strings.creator},
+        {property: 'og:image:width', content: strings.image.width},
+        {property: 'og:image:height', content: strings.image.height}
       ]
     }
   },
