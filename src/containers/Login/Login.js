@@ -23,7 +23,7 @@ export default class Login extends Component {
   render() {
     const {user, logout} = this.props;
     const styles = require('./Login.scss');
-    return (
+    return
       <div className={styles.loginPage + ' container'}>
         <Helmet title="Login"/>
         <h1>Login</h1>
@@ -48,7 +48,6 @@ export default class Login extends Component {
           </div>
         </div>
         }
-      </div>
-    );
+      </div>;
   }
 }
