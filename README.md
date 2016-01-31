@@ -5,9 +5,11 @@ fiTTrail provides a way for a GP to refer patients to take part in a tailored ex
 
 Our premise and experience is that Health Promotion is failing, unless there is an effective support structure in place.
 
+## Premise and solution
+
 fiTTrail solves this problem in three ways:—
 
-1) Measurement - Currently there is no way a doctor can track the patient's level of physical activity that he/she has prescribed. fiTTrail encourages patients to upload their activities on a regular basis
+1) Measurability - Currently there is no way a doctor can track the patient's level of physical activity that he/she has prescribed. fiTTrail encourages patients to upload their activities on a regular basis
 
 2) Accountability - People fail in lifestyle changes due to lack of accountability/coaching. fiTTrail enables health professionals to send automated messages if a patient fails to do exercise, or if they have done and so can be congratulated.
 
@@ -15,4 +17,6 @@ fiTTrail solves this problem in three ways:—
 
 fiTTrail is the crucial component in a health promotion strategy.
 
-Read about [the intended user journey](https://github.com/fiTTrail/assets/blob/master/fiTTrail%20Journey.md). This JavaScript implementation in progress is based on [React Redux Universal Hot Example](https://github.com/erikras/react-redux-universal-hot-example).
+## Implementation
+
+Read about [the intended user journey](https://github.com/fiTTrail/assets/blob/master/fiTTrail%20Journey.md). [Initial implementation is on Salesforce](http://nhshd16-developer-edition.eu6.force.com/RegisterPatient) and this JavaScript implementation in progress is based on [React Redux Universal Hot Example](https://github.com/erikras/react-redux-universal-hot-example).
